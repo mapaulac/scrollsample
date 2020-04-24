@@ -1,0 +1,20 @@
+{
+  "name": "endlessscroll",
+  "version": "1.0.0",
+  "description": "This example will send OSC from a webpage to Wekinator. It will send mouse X & Y if used on a desktop browser, and it will send two tilt values + touch X & Y if used on on a modile device.",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.6.5",
+    "http": "^0.0.0",
+    "node-osc": "^2.1.0",
+    "serve-static": "^1.13.1",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "mari calderon",
+  "license": "ISC"
+}

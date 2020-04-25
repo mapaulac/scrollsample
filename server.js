@@ -1,6 +1,10 @@
 
+const express = require('express');
+const app = express();
+const http = require('http').Server(app);
+
 var osc = require('node-osc');
-var io = require('socket.io')(8081);
+const io = require('socket.io')(http);
 var connect = require('connect');
 var serveStatic = require('serve-static');
 var oscServer, oscClient;

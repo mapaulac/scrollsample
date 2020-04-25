@@ -11,6 +11,7 @@ y.push({
 	type: 'float',
 	value: 0
 })
+
 var socket = io.connect();
 
 $(window).scroll(function() {

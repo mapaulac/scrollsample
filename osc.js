@@ -11,7 +11,7 @@ y.push({
 	type: 'float',
 	value: 0
 })
-var socket;
+var socket = io.connect();
 
 $(window).scroll(function() {
 		var height = $(window).scrollTop();

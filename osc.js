@@ -13,6 +13,21 @@ y.push({
 })
 var socket;
 
+$(window).scroll(function() {
+		var height = $(window).scrollTop();
+		console.log(height);
+		console.log("scrolling");
+		// document.getElementById("OSCbaby").innerHTML = "Sending Height " + height;
+
+		var h = []
+	  h.push({
+	    type: 'float',
+	    value: parseFloat(height) || 0
+	  })
+
+	  socket.emit('message', ['/height', h]);
+});
+
 //*****************Connect to Websocket*****************//
 function setupOsc(oscPortIn, oscPortOut) {
   var ipPort = ipAddress + ':8081';
